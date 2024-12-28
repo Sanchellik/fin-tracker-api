@@ -1,0 +1,60 @@
+[versions]
+java = "21"
+spring-boot = "3.4.1"
+spring-dependency-management = "1.1.7"
+spring-cloud = "2024.0.0"
+
+[libraries]
+## Main
+# Spring Boot Starters
+spring-boot-starter-actuator = { group = "org.springframework.boot", name = "spring-boot-starter-actuator" }
+spring-boot-starter-data-elasticsearch = { group = "org.springframework.boot", name = "spring-boot-starter-data-elasticsearch" }
+spring-boot-starter-data-jdbc = { group = "org.springframework.boot", name = "spring-boot-starter-data-jdbc" }
+spring-boot-starter-data-redis = { group = "org.springframework.boot", name = "spring-boot-starter-data-redis" }
+spring-boot-starter-security = { group = "org.springframework.boot", name = "spring-boot-starter-security" }
+spring-boot-starter-validation = { group = "org.springframework.boot", name = "spring-boot-starter-validation" }
+spring-boot-starter-web = { group = "org.springframework.boot", name = "spring-boot-starter-web" }
+
+# Spring Cloud
+spring-cloud-starter-circuitbreaker-resilience4j = { group = "org.springframework.cloud", name = "spring-cloud-starter-circuitbreaker-resilience4j" }
+spring-cloud-starter-consul-config = { group = "org.springframework.cloud", name = "spring-cloud-starter-consul-config" }
+spring-cloud-starter-consul-discovery = { group = "org.springframework.cloud", name = "spring-cloud-starter-consul-discovery" }
+
+# Other Spring
+spring-boot-devtools = { group = "org.springframework.boot", name = "spring-boot-devtools" }
+spring-boot-docker-compose = { group = "org.springframework.boot", name = "spring-boot-docker-compose" }
+spring-boot-configuration-processor = { group = "org.springframework.boot", name = "spring-boot-configuration-processor" }
+
+# Databases
+liquibase-core = { group = "org.liquibase", name = "liquibase-core" }
+postgresql = { group = "org.postgresql", name = "postgresql" }
+
+# Kafka
+spring-kafka = { group = "org.springframework.kafka", name = "spring-kafka" }
+
+# Tools, libs
+lombok = { group = "org.projectlombok", name = "lombok" }
+micrometer-registry-prometheus = { group = "io.micrometer", name = "micrometer-registry-prometheus" }
+
+
+## Test
+# Base
+junit-platform-launcher = { group = "org.junit.platform", name = "junit-platform-launcher" }
+
+# Spring
+spring-boot-starter-test = { group = "org.springframework.boot", name = "spring-boot-starter-test" }
+spring-boot-testcontainers = { group = "org.springframework.boot", name = "spring-boot-testcontainers" }
+spring-kafka-test = { group = "org.springframework.kafka", name = "spring-kafka-test" }
+spring-security-test = { group = "org.springframework.security", name = "spring-security-test" }
+
+# Testcontainers
+testcontainers-consul = { group = "org.testcontainers", name = "consul" }
+testcontainers-elasticsearch = { group = "org.testcontainers", name = "elasticsearch" }
+testcontainers-junit-jupiter = { group = "org.testcontainers", name = "junit-jupiter" }
+testcontainers-kafka = { group = "org.testcontainers", name = "kafka" }
+testcontainers-postgresql = { group = "org.testcontainers", name = "postgresql" }
+
+
+[plugins]
+spring-boot = { id = "org.springframework.boot", version.ref = "spring-boot" }
+spring-dependency-management = { id = "io.spring.dependency-management", version.ref = "spring-dependency-management" }

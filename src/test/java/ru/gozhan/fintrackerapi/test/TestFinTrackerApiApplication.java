@@ -1,6 +1,8 @@
-package ru.gozhan.fintrackerapi;
+package ru.gozhan.fintrackerapi.test;
 
 import org.springframework.boot.SpringApplication;
+import ru.gozhan.fintrackerapi.FinTrackerApiApplication;
+import ru.gozhan.fintrackerapi.test.e2e.config.TestcontainersConfiguration;
 
 public class TestFinTrackerApiApplication {
 
